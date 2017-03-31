@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int posicion, long l) {
-        Intent intent = new Intent(MainActivity.this, ListRestaurantesActivity.class);
-        intent.putExtra("TIPO_KEY", posicion);
-        startActivity(intent);
+        Intent intent2 = new Intent(MainActivity.this, ListRestaurantesActivity.class);
+        intent2.putExtra("TIPO_KEY", posicion);
+        startActivity(intent2);
     }
 }
